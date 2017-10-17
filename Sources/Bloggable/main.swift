@@ -4,8 +4,7 @@ import Kitura
 let router = Router()
 
 // Handle HTTP GET requests to /
-router.get("/") {
-    request, response, next in
+router.get("/") { _, response, next in
     response.send("Hello, World!")
     next()
 }

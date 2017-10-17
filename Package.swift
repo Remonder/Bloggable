@@ -11,6 +11,6 @@ let package = Package(
     targets: [
         .target(
             name: "Bloggable",
-            dependencies: ["Kitura"]),
+            dependencies: ["Kitura"])
     ]
 )
