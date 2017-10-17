@@ -6,12 +6,13 @@
 //
 
 import Commandant
+import Foundation
 import Result
 import SwiftKueryMySQL
 
 struct CreateTablesCommand : CommandProtocol {
-    var verb: String = "createTables"
-    var function: String = "Creates the database tables."
+    var verb = "createTables"
+    var function = "Creates the database tables."
     
     public func run(_ options: NoOptions<String>) -> Result<(), String> {
         let connection = MySQLConnection(user: "root", database: "blog")
