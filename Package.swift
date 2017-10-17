@@ -1,3 +1,10 @@
+//
+//  Package.swift
+//  Bloggable
+//
+//  Created by Steffen Ryll on 17.10.17.
+//
+
 // swift-tools-version:4.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
