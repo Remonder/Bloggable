@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "CMySQL",
+        "repositoryURL": "https://github.com/IBM-Swift/CMySQL.git",
+        "state": {
+          "branch": null,
+          "revision": "a9e4da59475b5db72434a0eaa9d1fb53858ad447",
+          "version": "0.1.2"
+        }
+      },
+      {
         "package": "Kitura",
         "repositoryURL": "https://github.com/IBM-Swift/Kitura.git",
         "state": {
@@ -62,6 +71,24 @@
           "branch": null,
           "revision": "badbf15cb8ea1ca6df5458f1472d84f1e070f7a7",
           "version": "0.12.74"
+        }
+      },
+      {
+        "package": "SwiftKuery",
+        "repositoryURL": "https://github.com/IBM-Swift/Swift-Kuery.git",
+        "state": {
+          "branch": null,
+          "revision": "909f75f4417609fe11934be1eabf0eb9244d08f4",
+          "version": "0.13.3"
+        }
+      },
+      {
+        "package": "SwiftKueryMySQL",
+        "repositoryURL": "https://github.com/IBM-Swift/SwiftKueryMySQL.git",
+        "state": {
+          "branch": null,
+          "revision": "dfd9c8a4b6120345f7ce0f33ed70317041508a10",
+          "version": "0.13.2"
         }
       },
       {

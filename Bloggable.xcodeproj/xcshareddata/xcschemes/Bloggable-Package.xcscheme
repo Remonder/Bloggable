@@ -28,6 +28,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftKueryMySQL::SwiftKueryMySQL"
+               BuildableName = "SwiftKueryMySQL.framework"
+               BlueprintName = "SwiftKueryMySQL"
+               ReferencedContainer = "container:Bloggable.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftKuery::SwiftKuery"
+               BuildableName = "SwiftKuery.framework"
+               BlueprintName = "SwiftKuery"
+               ReferencedContainer = "container:Bloggable.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "Kitura::Kitura"
                BuildableName = "Kitura.framework"
                BlueprintName = "Kitura"
