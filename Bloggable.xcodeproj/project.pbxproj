@@ -845,6 +845,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_195 /* Build configuration list for PBXNativeTarget "Bloggable" */;
 			buildPhases = (
+				245D875A1F965C48005C4767 /* Run SwiftLint */,
 				OBJ_198 /* Sources */,
 				OBJ_200 /* Frameworks */,
 			);
@@ -869,7 +870,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "BloggablePackageDescription" */;
 			buildPhases = (
-				245D87591F965AEA005C4767 /* ShellScript */,
 				OBJ_150 /* Sources */,
 			);
 			buildRules = (
@@ -1161,13 +1161,14 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		245D87591F965AEA005C4767 /* ShellScript */ = {
+		245D875A1F965C48005C4767 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run SwiftLint";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
