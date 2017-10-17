@@ -11,6 +11,7 @@ import Result
 let commandRegistry = CommandRegistry<String>()
 let helpCommand = HelpCommand(registry: commandRegistry)
 commandRegistry.register(helpCommand)
+commandRegistry.register(CreateTablesCommand())
 commandRegistry.main(defaultVerb: helpCommand.verb) { error in
     print(error)
 }

@@ -31,6 +31,7 @@
 
 /* Begin PBXBuildFile section */
 		245D87C51F9692AB005C4767 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D87C31F969283005C4767 /* String+Error.swift */; };
+		245D87CA1F969559005C4767 /* CreateTablesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D87C71F969448005C4767 /* CreateTablesCommand.swift */; };
 		OBJ_232 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_238 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
 		OBJ_244 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Package.swift */; };
@@ -414,6 +415,7 @@
 
 /* Begin PBXFileReference section */
 		245D87C31F969283005C4767 /* String+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Error.swift"; sourceTree = "<group>"; };
+		245D87C71F969448005C4767 /* CreateTablesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTablesCommand.swift; sourceTree = "<group>"; };
 		"Bloggable::Bloggable::Product" /* Bloggable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bloggable; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Commandant::Commandant::Product" /* Commandant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commandant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -739,6 +741,14 @@
 			name = StandardLibrary;
 			path = Sources/Bloggable/Extensions/StandardLibrary;
 			sourceTree = SOURCE_ROOT;
+		};
+		245D87C61F969408005C4767 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				245D87C71F969448005C4767 /* CreateTablesCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
 		};
 		OBJ_100 /* bodyParser */ = {
 			isa = PBXGroup;
@@ -1226,6 +1236,7 @@
 		OBJ_8 /* Bloggable */ = {
 			isa = PBXGroup;
 			children = (
+				245D87C61F969408005C4767 /* Commands */,
 				245D87C11F969205005C4767 /* Extensions */,
 				OBJ_9 /* Article.swift */,
 				OBJ_10 /* main.swift */,
@@ -1793,6 +1804,7 @@
 			files = (
 				OBJ_304 /* Article.swift in Sources */,
 				245D87C51F9692AB005C4767 /* String+Error.swift in Sources */,
+				245D87CA1F969559005C4767 /* CreateTablesCommand.swift in Sources */,
 				OBJ_305 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
