@@ -5,12 +5,13 @@
 //  Created by Steffen Ryll on 17.10.17.
 //
 
+import Foundation
 import SwiftKuery
 
-struct Article {
-    let id: Int
+struct Article: Decodable {
+    let id: Int64
     let title: String
-    let content: String
+    //let content: String
 }
 
 // MARK: - Table

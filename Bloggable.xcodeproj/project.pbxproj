@@ -33,6 +33,9 @@
 		245D87C51F9692AB005C4767 /* String+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D87C31F969283005C4767 /* String+Error.swift */; };
 		245D87CA1F969559005C4767 /* CreateTablesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D87C71F969448005C4767 /* CreateTablesCommand.swift */; };
 		245D87CD1F969C80005C4767 /* RunServerCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245D87CB1F969C79005C4767 /* RunServerCommand.swift */; };
+		C1692C2A1F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1692C291F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift */; };
+		C1692C2D1F97C00F00B972B9 /* QueryResultDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */; };
+		C1692C301F97C37000B972B9 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1692C2F1F97C37000B972B9 /* ResultSet.swift */; };
 		OBJ_232 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_238 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
 		OBJ_244 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Package.swift */; };
@@ -419,6 +422,9 @@
 		245D87C71F969448005C4767 /* CreateTablesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTablesCommand.swift; sourceTree = "<group>"; };
 		245D87CB1F969C79005C4767 /* RunServerCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunServerCommand.swift; sourceTree = "<group>"; };
 		"Bloggable::Bloggable::Product" /* Bloggable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bloggable; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1692C291F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+safeSubscribt.swift"; sourceTree = "<group>"; };
+		C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueryResultDecoder.swift; path = Sources/Bloggable/Extensions/StandardLibrary/QueryResultDecoder.swift; sourceTree = SOURCE_ROOT; };
+		C1692C2F1F97C37000B972B9 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultSet.swift; path = Sources/Bloggable/Extensions/StandardLibrary/ResultSet.swift; sourceTree = SOURCE_ROOT; };
 		"Commandant::Commandant::Product" /* Commandant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commandant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -729,6 +735,7 @@
 		245D87C11F969205005C4767 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C1692C2E1F97C35500B972B9 /* Kuery */,
 				245D87C21F969227005C4767 /* StandardLibrary */,
 			);
 			name = Extensions;
@@ -739,6 +746,7 @@
 			isa = PBXGroup;
 			children = (
 				245D87C31F969283005C4767 /* String+Error.swift */,
+				C1692C291F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift */,
 			);
 			name = StandardLibrary;
 			path = Sources/Bloggable/Extensions/StandardLibrary;
@@ -752,6 +760,22 @@
 			);
 			path = Commands;
 			sourceTree = "<group>";
+		};
+		C1692C2B1F97C00000B972B9 /* ORM */ = {
+			isa = PBXGroup;
+			children = (
+				C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */,
+			);
+			path = ORM;
+			sourceTree = SOURCE_ROOT;
+		};
+		C1692C2E1F97C35500B972B9 /* Kuery */ = {
+			isa = PBXGroup;
+			children = (
+				C1692C2F1F97C37000B972B9 /* ResultSet.swift */,
+			);
+			path = Kuery;
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_100 /* bodyParser */ = {
 			isa = PBXGroup;
@@ -1169,7 +1193,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -1178,7 +1202,6 @@
 				OBJ_12 /* Dependencies */,
 				OBJ_213 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -1239,6 +1262,7 @@
 		OBJ_8 /* Bloggable */ = {
 			isa = PBXGroup;
 			children = (
+				C1692C2B1F97C00000B972B9 /* ORM */,
 				245D87C61F969408005C4767 /* Commands */,
 				245D87C11F969205005C4767 /* Extensions */,
 				OBJ_9 /* Article.swift */,
@@ -1668,7 +1692,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_213 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1806,10 +1830,13 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_304 /* Article.swift in Sources */,
+				C1692C2A1F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift in Sources */,
 				245D87C51F9692AB005C4767 /* String+Error.swift in Sources */,
 				245D87CA1F969559005C4767 /* CreateTablesCommand.swift in Sources */,
 				245D87CD1F969C80005C4767 /* RunServerCommand.swift in Sources */,
+				C1692C301F97C37000B972B9 /* ResultSet.swift in Sources */,
 				OBJ_305 /* main.swift in Sources */,
+				C1692C2D1F97C00F00B972B9 /* QueryResultDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

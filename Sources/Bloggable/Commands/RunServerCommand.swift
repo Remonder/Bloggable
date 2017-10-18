@@ -26,10 +26,16 @@ struct RunServerCommand : CommandProtocol {
             let query = Select(from: Article.TableV0())
             connection.execute(query: query) { queryResult in
                 if let resultSet = queryResult.asResultSet {
-                    for row in resultSet.rows {
-                        let array = row as Array
-                        response.send(array.dropFirst().first as! String + "\n")
+                    do {
+                        let articles = try resultSet.decode(Article.self)
+                        for article in articles {
+                            response.send(article.title + "\n")
+                        }
+                    } catch {
+                        response.send(error.localizedDescription)
+                        print(error)
                     }
+                    
                 }
             }
             response.send("END\n")
