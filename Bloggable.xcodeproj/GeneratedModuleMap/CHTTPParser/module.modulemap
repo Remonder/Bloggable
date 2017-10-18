@@ -1,4 +1,4 @@
 module CHTTPParser {
-    umbrella header "/Users/steffenryll/Repositories/Remonder/Bloggable/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include/CHTTPParser.h"
+    umbrella header "/Users/dnadoba/Repositories/Bloggable/.build/checkouts/Kitura-net.git--7410958935072501107/Sources/CHTTPParser/include/CHTTPParser.h"
     export *
 }

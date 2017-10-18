@@ -423,8 +423,8 @@
 		245D87CB1F969C79005C4767 /* RunServerCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunServerCommand.swift; sourceTree = "<group>"; };
 		"Bloggable::Bloggable::Product" /* Bloggable */ = {isa = PBXFileReference; lastKnownFileType = text; path = Bloggable; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1692C291F97BFD400B972B9 /* RandomAccessCollection+safeSubscribt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomAccessCollection+safeSubscribt.swift"; sourceTree = "<group>"; };
-		C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueryResultDecoder.swift; path = Sources/Bloggable/Extensions/StandardLibrary/QueryResultDecoder.swift; sourceTree = SOURCE_ROOT; };
-		C1692C2F1F97C37000B972B9 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultSet.swift; path = Sources/Bloggable/Extensions/StandardLibrary/ResultSet.swift; sourceTree = SOURCE_ROOT; };
+		C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QueryResultDecoder.swift; path = ORM/QueryResultDecoder.swift; sourceTree = SOURCE_ROOT; };
+		C1692C2F1F97C37000B972B9 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultSet.swift; path = Kuery/ResultSet.swift; sourceTree = SOURCE_ROOT; };
 		"Commandant::Commandant::Product" /* Commandant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commandant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-net::CHTTPParser::Product" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -766,7 +766,8 @@
 			children = (
 				C1692C2C1F97C00F00B972B9 /* QueryResultDecoder.swift */,
 			);
-			path = ORM;
+			name = ORM;
+			path = Sources/Bloggable/ORM;
 			sourceTree = SOURCE_ROOT;
 		};
 		C1692C2E1F97C35500B972B9 /* Kuery */ = {
@@ -774,7 +775,8 @@
 			children = (
 				C1692C2F1F97C37000B972B9 /* ResultSet.swift */,
 			);
-			path = Kuery;
+			name = Kuery;
+			path = Sources/Bloggable/Extensions/Kuery;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_100 /* bodyParser */ = {
