@@ -15,7 +15,7 @@ struct CreateTablesCommand : CommandProtocol {
     var function = "Creates the database tables."
     
     public func run(_ options: NoOptions<String>) -> Result<(), String> {
-        let connection = MySQLConnection(user: "root", database: "blog")
+        let connection = MySQLConnection.makeWithDefaultParameters()
         connection.connect { error in
             if let error = error {
                 print(error.localizedDescription)

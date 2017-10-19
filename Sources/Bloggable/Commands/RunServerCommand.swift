@@ -17,25 +17,25 @@ struct RunServerCommand : CommandProtocol {
     var function = "Runs the server."
     
     public func run(_ options: NoOptions<String>) -> Result<(), String> {
-        let connection = MySQLConnection(user: "root", database: "blog")
-        connection.connect { print($0?.localizedDescription ?? "No Error") }
+        
+        let connection = MySQLConnection.makeWithDefaultParameters()
+        connection.connect {
+            if let error = $0 {
+                print(error)
+            } else {
+                print("successful connected to MySQL server.")
+            }
+        }
         
         let router = Router()
         router.get("/") { _, response, next in
             response.send("START\n")
             let query = Select(from: Article.TableV0())
             connection.execute(query: query) { queryResult in
-                if let resultSet = queryResult.asResultSet {
-                    do {
-                        let articles = try resultSet.decode(Article.self)
-                        for article in articles {
-                            response.send(article.title + "\n")
-                        }
-                    } catch {
-                        response.send(error.localizedDescription)
-                        print(error)
-                    }
-                    
+                let articles = queryResult.asResultSet.flatMap{ try? $0.decode(Article.self) }
+                
+                articles?.forEach { article in
+                    response.send(article.title + "\n")
                 }
             }
             response.send("END\n")
